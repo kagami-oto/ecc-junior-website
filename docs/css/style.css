@@ -2,7 +2,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -72,14 +72,19 @@ body {
 
 /* about */
 .about--main {
-  background: url("../images/header-back.png");
+  background: url("../images/header-back.png") no-repeat center;
+  width: 100%;
   padding: 56px 150px;
   margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about--hero {
-  padding: 16px;
+  padding: 24px;
   background: #1c4f4a80;
   color: white;
+  max-width: 520px;
 }
 
 /* news */
