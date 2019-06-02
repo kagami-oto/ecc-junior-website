@@ -1,0 +1,52 @@
+/* news */
+
+.news {
+  &--more {
+    text-align: right;
+    border-bottom: 2px;
+    padding: 16;
+    display: flex;
+    color: brown;
+
+    & fas {
+      width: 50px;
+    }
+  }
+}
+
+.news--main {
+  position: relative;
+  padding: 56px 150px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news--board {
+  background: url("../images/news-back.png");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+}
+
+.news--letter {
+  background: url("../images/news-airmail.png");
+  background-size: cover;
+  padding: 36px;
+  height: 320px;
+}
+
+.news--title {
+  margin-bottom: 16px;
+}
+
+.news--date {
+  font-weight: bold;
+  margin-bottom: 8px;
+}

@@ -8,6 +8,8 @@
   <link href="css/main.bundle.css" rel="stylesheet"></head>
 
   <body class="main">
+    <div class="bricks--left"></div>
+    <div class="bricks--right"></div>
     <div id="wrapper">
       <header>
         <nav class="header">
@@ -15,11 +17,11 @@
             ><img src="images/logo_eccjr.png"
           /></a>
           <ul class="header--list">
-            <li class="header--list-item"><a href="#about">ABOUT</a></li>
-            <li class="header--list-item"><a href="#news">NEWS</a></li>
-            <li class="header--list-item"><a href="#schedule">SCHEDULE</a></li>
-            <li class="header--list-item"><a href="#teachers">TEACHER</a></li>
-            <li class="header--list-item"><a href="#contact">CONTACT</a></li>
+            <a href="#about"><li class="header--list-item">ABOUT</li></a>
+            <a href="#news"><li class="header--list-item">NEWS</li></a>
+            <a href="#schedule"><li class="header--list-item">SCHEDULE</li></a>
+            <a href="#teachers"><li class="header--list-item">TEACHER</li></a>
+            <a href="#contact"><li class="header--list-item">CONTACT</li></a>
           </ul>
         </nav>
       </header>
@@ -42,14 +44,21 @@
               <p>
                 あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
               </p>
-              <p><a href="#">もっと見る</a></p>
+              <p>
+                <a href="#" class="news--more"
+                  >もっと見る
+                  <span class="icon has-text-info">
+                    <i class="fas fa-caret-right fa-fw"></i>
+                  </span>
+                </a>
+              </p>
             </div>
           </div>
         </section>
         <!--end #news-->
-        <section id="schedule">
+        <section id="schedule" class="schedule--main">
           <h1 class="section--title">SCHEDULE</h1>
-          <table>
+          <table class="schedule--table" border="1">
             <tr>
               <th></th>
               <th>月</th>
@@ -72,63 +81,63 @@
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>算数</td>
+              <td>算数</td>
+              <td>算数</td>
+              <td>算数</td>
+              <td>算数</td>
+              <td>算数</td>
+              <td>算数</td>
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>理科</td>
+              <td>理科</td>
+              <td>理科</td>
+              <td>理科</td>
+              <td>理科</td>
+              <td>理科</td>
+              <td>理科</td>
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>社会</td>
+              <td>社会</td>
+              <td>社会</td>
+              <td>社会</td>
+              <td>社会</td>
+              <td>社会</td>
+              <td>社会</td>
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
+              <td>英語</td>
             </tr>
             <tr>
               <td>10:00-10:50</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
-              <td>国語</td>
+              <td>数学</td>
+              <td>数学</td>
+              <td>数学</td>
+              <td>数学</td>
+              <td>数学</td>
+              <td>数学</td>
+              <td>数学</td>
             </tr>
           </table>
         </section>

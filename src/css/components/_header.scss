@@ -10,17 +10,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 4;
 }
 
 .header--list {
   display: flex;
   align-items: "center";
-  height: 100%;
 }
 
-.header--list li {
-  list-style: none;
+.header--list-item {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  height: 60px;
+  list-style: none;
   padding: 16px;
   align-items: center;
   &:hover {
@@ -29,9 +32,6 @@
   &:active {
     background: rgba(0, 0, 0, 0.4); /* クリックした時若干暗くする*/
   }
-}
-
-.header--list-item a {
   text-decoration: none;
   color: white;
 }

@@ -1,0 +1,30 @@
+/* schedule */
+.schedule {
+  &--table {
+    width: 520px;
+    & tr {
+      & th,
+      & td {
+        text-align: center;
+        padding: 0.5rem;
+      }
+
+      & th {
+        font-size: 1.2rem;
+      }
+    }
+
+    & tr:nth-child(odd) {
+      background-color: #1c6f4a80;
+    }
+  }
+}
+.schedule--main {
+  position: relative;
+  padding: 56px 150px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

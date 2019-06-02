@@ -1,4 +1,6 @@
 .about {
+  position: relative;
+  z-index: 2;
   background-image: url("../images/header-back.png");
   background-repeat: no-repeat;
   background-size: cover;
