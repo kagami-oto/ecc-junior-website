@@ -24,6 +24,10 @@
     padding: 24px;
     background: #1c4f4a80;
     color: white;
-    max-width: 520px;
+    max-width: $width-sm;
+
+    @media (min-width: $viewport-md) {
+      max-width: $width-md;
+    }
   }
 }

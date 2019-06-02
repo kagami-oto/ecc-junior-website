@@ -16,7 +16,7 @@
 
 .news--main {
   position: relative;
-  padding: 56px 150px;
+  padding: 56px 0px;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -32,7 +32,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 520px;
+  max-width: $width-sm;
+
+  @media (min-width: $viewport-md) {
+    max-width: $width-md;
+  }
 }
 
 .news--letter {

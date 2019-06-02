@@ -1,7 +1,12 @@
 /* schedule */
 .schedule {
   &--table {
-    width: 520px;
+    max-width: $width-sm;
+
+    @media (min-width: $viewport-md) {
+      max-width: $width-md;
+    }
+
     & tr {
       & th,
       & td {

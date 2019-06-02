@@ -42,12 +42,30 @@ article {
 
 .with-leaf {
   &::before {
-    content: url("../images/line-left.png");
-    margin-right: 3rem;
+    content: "";
+    background-image: url("../images/line-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+    width: 100px;
+    background-position: center;
+    @media (min-width: $viewport-md) {
+      margin-right: 1rem;
+      width: 150px;
+    }
   }
   &::after {
-    content: url("../images/line-right.png");
-    margin-left: 3rem;
+    content: "";
+    background-image: url("../images/line-right.png");
+    background-repeat: no-repeat;
+    margin-left: 0.5rem;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    @media (min-width: $viewport-md) {
+      margin-left: 1rem;
+      width: 150px;
+    }
   }
 }
 
@@ -57,24 +75,25 @@ article {
 }
 
 /* bricks */
+.bricks {
+  @media (min-width: $viewport-md) {
+    position: fixed;
+    background-repeat: repeat-y;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+  }
+}
+
 .bricks--left {
-  position: fixed;
-  background: url("../images/side-left.png") repeat-y;
+  background-image: url("../images/side-left.png");
   left: 0;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  width: 100px;
 }
 
 .bricks--right {
-  position: fixed;
-  background: url("../images/side-right.png") repeat-y;
+  background-image: url("../images/side-right.png");
   right: 0;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  width: 100px;
 }
 
 /* font */
