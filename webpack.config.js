@@ -61,7 +61,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].bundle.[contenthash].css"
+      filename: "css/[name].bundle.css"
     }),
     new HtmlWebpackPlugin({
       title: "ECCジュニア",
