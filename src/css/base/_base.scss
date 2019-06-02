@@ -35,9 +35,20 @@ article {
 .section--title {
   font-size: 24px;
   text-align: center;
-  padding: 16px;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: center;
+}
+
+.with-leaf {
+  &::before {
+    content: url("../images/line-left.png");
+    margin-right: 3rem;
+  }
+  &::after {
+    content: url("../images/line-right.png");
+    margin-left: 3rem;
+  }
 }
 
 /* main */
