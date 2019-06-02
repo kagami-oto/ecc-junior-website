@@ -1,0 +1,124 @@
+/*reset*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+  vertical-align: bottom;
+}
+
+/*layout*/
+body {
+  padding-top: 60px;
+  width: auto;
+  font-family: "Andale Mono Regular", "Noto Sans JP", sans-serif;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1c4f4a;
+  box-shadow: 0 1px 1px #5b3520;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--list {
+  display: flex;
+  align-items: "center";
+  height: 100%;
+}
+
+.header--list li {
+  list-style: none;
+  text-align: center;
+  padding: 16px;
+  align-items: center;
+  &:hover {
+    background: rgba(0, 0, 0, 0.4); /* Hoverした時若干暗くする*/
+  }
+  &:active {
+    background: rgba(0, 0, 0, 0.4); /* クリックした時若干暗くする*/
+  }
+}
+
+.header--list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/* section */
+.section--title {
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+}
+
+/* main */
+.main {
+  background: url("../images/background.png") repeat; /* 背景の画像、リピートさせる */
+}
+
+/* about */
+.about--main {
+  background: url("../images/header-back.png") no-repeat center;
+  width: 100%;
+  padding: 56px 150px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about--hero {
+  padding: 24px;
+  background: #1c4f4a80;
+  color: white;
+  max-width: 520px;
+}
+
+/* news */
+.news--main {
+  padding: 56px 150px;
+}
+
+.news--board {
+  background: url("../images/news-back.png");
+  background-size: cover;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news--letter {
+  background: url("../images/news-airmail.png");
+  background-size: cover;
+  padding: 36px;
+  height: 320px;
+}
+
+.news--title {
+  margin-bottom: 16px;
+}
+
+.news--date {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* font */
+@font-face {
+  font-family: "Andale Mono Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Andale Mono Regular"), url("ANDALEMO.woff") format("woff");
+}
