@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  background-color: $primary-color;
+  height: 40px;
+  z-index: 4;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

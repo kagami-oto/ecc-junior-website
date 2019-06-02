@@ -2,11 +2,15 @@
 @import "./base/base.scss";
 @import "./base/reset.scss";
 
-// components
-@import "./components/header.scss";
-
 // vendor css
 @import "./vendor/bulma.scss";
+
+// variables
+@import "./variables/colors.scss";
+
+// components
+@import "./components/header.scss";
+@import "./components/footer.scss";
 
 // pages
 @import "./pages/about.scss";
