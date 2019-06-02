@@ -20,7 +20,7 @@
     }
 
     & tr:nth-child(odd) {
-      background-color: #1c6f4a80;
+      background-color: rgba($primary-color-light, 0.5);
     }
   }
 }

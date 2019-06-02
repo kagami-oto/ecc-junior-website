@@ -60,7 +60,9 @@ const config = {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: "css/[name].bundle.css" }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].bundle.[contenthash].css"
+    }),
     new HtmlWebpackPlugin({
       title: "ECCジュニア",
       template: "src/index.html"
