@@ -2,7 +2,6 @@
 .schedule {
   &--table {
     max-width: $width-sm;
-
     @media (min-width: $viewport-md) {
       max-width: $width-md;
     }
