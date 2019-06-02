@@ -1,0 +1,12 @@
+// base
+@import "./base/base.scss";
+@import "./base/reset.scss";
+
+// components
+@import "./components/header.scss";
+
+// vendor css
+@import "./vendor/bulma.scss";
+
+// page
+@import "./pages/about.scss";

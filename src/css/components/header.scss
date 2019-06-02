@@ -1,0 +1,37 @@
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #1c4f4a;
+  box-shadow: 0 1px 1px #5b3520;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--list {
+  display: flex;
+  align-items: "center";
+  height: 100%;
+}
+
+.header--list li {
+  list-style: none;
+  text-align: center;
+  padding: 16px;
+  align-items: center;
+  &:hover {
+    background: rgba(0, 0, 0, 0.4); /* Hoverした時若干暗くする*/
+  }
+  &:active {
+    background: rgba(0, 0, 0, 0.4); /* クリックした時若干暗くする*/
+  }
+}
+
+.header--list-item a {
+  text-decoration: none;
+  color: white;
+}

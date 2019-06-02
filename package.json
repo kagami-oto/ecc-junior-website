@@ -1,6 +1,6 @@
 {
   "name": "ecc-junior-website",
-  "version": "0.0.1.",
+  "version": "0.0.1",
   "description": "ecc-junior website",
   "main": "index.js",
   "repository": "https://github.com/kagami-oto/ecc-junior-website.git",
@@ -8,8 +8,15 @@
   "license": "MIT",
   "scripts": {
     "start": "browser-sync start -s docs -w",
-    "build": "rimraf docs && webpack",
-    "watch": "webpack -w"
+    "webpack": "webpack",
+    "watch": "webpack -w",
+    "clean": "rimraf docs",
+    "build": "npm-run-all clean webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.0",
@@ -18,14 +25,16 @@
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.3.0",
     "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
     "terser-webpack-plugin": "^1.3.0",
     "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2",
-    "node-sass": "^4.12.0"
+    "webpack-cli": "^3.3.2"
   },
   "dependencies": {
     "bulma": "^0.7.5"

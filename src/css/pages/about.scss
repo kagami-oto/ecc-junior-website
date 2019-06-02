@@ -1,0 +1,27 @@
+.about {
+  background-image: url("../images/header-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--main {
+    width: 100%;
+    padding: 56px 150px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--hero {
+    padding: 24px;
+    background: #1c4f4a80;
+    color: white;
+    max-width: 520px;
+  }
+}
