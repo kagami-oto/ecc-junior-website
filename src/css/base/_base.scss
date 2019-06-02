@@ -23,7 +23,7 @@ p {
 /*layout*/
 body {
   width: auto;
-  font-family: "Andale Mono Regular", "Noto Sans JP", sans-serif;
+  font-family: $font-default;
 }
 
 article {
@@ -35,9 +35,10 @@ article {
 .section--title {
   font-size: 24px;
   text-align: center;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .with-leaf {
@@ -49,6 +50,7 @@ article {
     margin-right: 0.5rem;
     width: 100px;
     background-position: center;
+    transition: all 0.2s;
     @media (min-width: $viewport-md) {
       margin-right: 1rem;
       width: 150px;
@@ -62,6 +64,7 @@ article {
     width: 100px;
     background-size: contain;
     background-position: center;
+    transition: all 0.2s;
     @media (min-width: $viewport-md) {
       margin-left: 1rem;
       width: 150px;
