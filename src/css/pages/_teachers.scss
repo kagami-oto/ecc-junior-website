@@ -1,4 +1,4 @@
-.teachers--main {
+.teacher--main {
   position: relative;
   padding: 56px 0px;
   z-index: 3;
@@ -6,4 +6,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.teacher--image {
+  background-image: url("../images/teacher.jpg");
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.teacher--profile {
+  padding: 36px;
 }
