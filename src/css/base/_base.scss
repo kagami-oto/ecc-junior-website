@@ -48,6 +48,12 @@ article {
   border-bottom: 2px solid $primary-color;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .with-leaf {
   &::before {
     content: "";

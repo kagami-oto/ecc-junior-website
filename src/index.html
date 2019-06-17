@@ -58,14 +58,16 @@
         }
       }
     </style>
-    <noscript><style amp-boilerplate>
+    <noscript
+      ><style amp-boilerplate>
         body {
           -webkit-animation: none;
           -moz-animation: none;
           -ms-animation: none;
           animation: none;
         }
-      </style></noscript>
+      </style></noscript
+    >
   </head>
 
   <body class="main">
@@ -215,43 +217,44 @@
         <!--end #schedule-->
         <section id="teacher" class="teacher--main">
           <h1 class="section--title with-leaf">TEACHER</h1>
-
           <div class="container">
-          <div class="columns">
-            
-            <div class="column">
-              <div class="teacher--image"></div>
-            </div>
-            <div class="column">
-              <div class="teacher--profile">
-                <h2 class="section--header-text">James Bond</h2>
-                <p>
-                  これはダミーテキストです。先生の自己紹介文をここに記載します。これはダミーテキストです。先生の自己紹介文をここに記載します。これはダミーテキストです。先生の自己紹介文をここに記載します。
-                </p>
+            <div class="columns">
+              <div class="column">
+                <div class="teacher--image"></div>
+              </div>
+              <div class="column">
+                <div class="teacher--profile">
+                  <h2 class="section--header-text">James Bond</h2>
+                  <p>
+                    これはダミーテキストです。先生の自己紹介文をここに記載します。これはダミーテキストです。先生の自己紹介文をここに記載します。これはダミーテキストです。先生の自己紹介文をここに記載します。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
         <!--teacher-->
         <section id="contact" 　class="contact--main">
           <h1 class="section--title with-leaf">CONTACT</h1>
           <div class="container">
-          <div class="columns">
-            <div class="column">
-              <div id="map"
-              ></div>
-            </div>
-            <div class="column">
-              <h2 class="section--header-text">Address</h2>
-              <p>〒123-4567</p>
-              <p>東京都世田谷区玉川2-22-13</p>
-              <h2 class="section--header-text">Contact Info</h2>
-              <p>電話番号　12-1234-1234</p>
-              <p>メール　bcdef@abc.jp</p>
+            <div class="columns">
+              <div class="column">
+                <div class="center">
+                  <div id="map"></div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="contact--detail">
+                  <h2 class="section--header-text">Address</h2>
+                  <p>〒123-4567</p>
+                  <p>東京都世田谷区玉川2-22-13</p>
+                  <h2 class="section--header-text">Contact Info</h2>
+                  <p>電話番号　12-1234-1234</p>
+                  <p>メール　bcdef@abc.jp</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
         </section>
         <!--end #contact-->
       </article>
@@ -264,17 +267,20 @@
     </div>
     <!--end #wrapper-->
     <script>
-        var map;
-        
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 35.689614, lng: 139.691585},
-            zoom: 11
-          });
-        }
+      var map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 35.689614, lng: 139.691585 },
+          zoom: 11
+        });
+      }
     </script>
-    <script async src=”https://cdn.ampproject.org/v0.js” ></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRy6v4rFyMBeerpbUpWLptySW_awXg50M&callback=initMap"
-    async defer></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRy6v4rFyMBeerpbUpWLptySW_awXg50M&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
