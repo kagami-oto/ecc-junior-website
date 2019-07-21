@@ -2,22 +2,26 @@
   "name": "ecc-junior-website",
   "version": "0.0.1",
   "description": "ecc-junior website",
-  "main": "index.js",
   "repository": "https://github.com/kagami-oto/ecc-junior-website.git",
-  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
   "license": "MIT",
+  "author": "Jesse Katsumata <jesse.katsumata@gmail.com>",
+  "main": "index.js",
   "scripts": {
-    "start": "browser-sync start -s docs -w",
-    "webpack": "webpack",
-    "watch": "webpack -w",
-    "dev": "npm-run-all start watch",
+    "assets": "cp -r src/images docs",
+    "build": "npm-run-all clean webpack assets",
     "clean": "rimraf docs",
-    "build": "npm-run-all clean webpack"
+    "dev": "npm-run-all start watch",
+    "start": "browser-sync start -s docs -w",
+    "watch": "webpack -w",
+    "webpack": "webpack"
   },
   "husky": {
     "hooks": {
       "pre-commit": "yarn build"
     }
+  },
+  "dependencies": {
+    "bulma": "^0.7.5"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.0",
@@ -36,8 +40,5 @@
     "terser-webpack-plugin": "^1.3.0",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  },
-  "dependencies": {
-    "bulma": "^0.7.5"
   }
 }

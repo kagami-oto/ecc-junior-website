@@ -9,11 +9,13 @@
 }
 
 .teacher--image {
-  background-image: url("../images/teacher.jpg");
-  height: 320px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $viewport-md) {
+    justify-content: flex-end;
+  }
 }
 
 .teacher--profile {
