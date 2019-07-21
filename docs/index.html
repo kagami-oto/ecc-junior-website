@@ -124,25 +124,7 @@
           <div class="about--hero">
             <h1 class="section--title">ABOUT</h1>
             <p>
-              中町3丁目教室の 講師の近藤です。
-            </p>
-            <p>
-              英語、英会話 幼稚園 年中から中3まで
-            </p>
-            <p>
-              英検®クラス 5級から2級まで、
-            </p>
-            <p>
-              数学、数検対応クラス 中1から中3まで
-            </p>
-            <p>
-              漢検クラス 11級から準二級まで
-            </p>
-            <p>
-              ひとクラス、1から4名までの少人数で行なっております。
-            </p>
-            <p>
-              詳細は 070-7531-5151近藤まで
+              製作中
             </p>
           </div>
         </section>
@@ -322,11 +304,10 @@
               <div class="column">
                 <div class="contact--detail">
                   <h2 class="section--header-text">Address</h2>
-                  <p>〒123-4567</p>
-                  <p>東京都世田谷区玉川2-22-13</p>
+                  <p>〒158-0091</p>
+                  <p>世田谷区中町3ー6-20</p>
                   <h2 class="section--header-text">Contact Info</h2>
                   <p>電話番号　070-7531-5151</p>
-                  <p>メール　bcdef@abc.jp</p>
                 </div>
               </div>
             </div>
@@ -344,11 +325,17 @@
     <!--end #wrapper-->
     <script>
       var map;
-
+      var latlng = { lat: 35.6143956, lng: 139.645342 };
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 35.689614, lng: 139.691585 },
-          zoom: 11
+          center: latlng,
+          zoom: 16
+        });
+
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map,
+          title: "ECCジュニア教室"
         });
       }
     </script>
