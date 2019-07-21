@@ -25,7 +25,9 @@
     background: #1c4f4a80;
     color: white;
     max-width: $width-sm;
-
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     @media (min-width: $viewport-md) {
       max-width: $width-md;
     }
