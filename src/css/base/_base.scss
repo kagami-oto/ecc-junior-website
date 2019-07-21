@@ -105,11 +105,13 @@ article {
 .bricks--left {
   background-image: url("../images/side-left.png");
   left: 0;
+  z-index: 5;
 }
 
 .bricks--right {
   background-image: url("../images/side-right.png");
   right: 0;
+  z-index: 5;
 }
 
 /* font */
