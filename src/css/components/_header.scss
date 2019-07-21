@@ -1,17 +1,8 @@
 /* header */
-.header {
-  position: fixed;
-  padding: 0 0.5rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: $header-height;
+
+.header--color {
   background-color: $primary-color;
-  box-shadow: 0 1px 1px #5b3520;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 8;
+  color: white;
 }
 
 .header--logo-container {

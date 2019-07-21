@@ -76,33 +76,47 @@
     <div class="bricks bricks--right"></div>
     <div id="wrapper">
       <header>
-        <nav class="header">
-          <a href="#" class="header--logo-container" aria-label="Back to top">
-            <div class="header--logo"></div>
-          </a>
-          <ul class="header--list">
-            <li class="header--list-item">
-              <a href="#about" aria-label="About">ABOUT</a>
-            </li>
-            <li class="header--list-item">
-              <a href="#news" aria-label="News">
+        <nav class="navbar is-fixed-top is-primary header--color">
+          <div class="navbar-brand">
+            <a href="#" class="navbar-item" aria-label="Back to top">
+              <img
+                src="./images/logo_eccjr.png"
+                alt="ECC Junior Logo"
+                width="89"
+                height="28"
+              />
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navMenu"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+              <a href="#about" class="navbar-item" aria-label="About">
+                ABOUT
+              </a>
+              <a href="#news" class="navbar-item" aria-label="News">
                 NEWS
               </a>
-            </li>
-            <li class="header--list-item">
-              <a href="#schedule" aria-label="Schedule">SCHEDULE</a>
-            </li>
-            <li class="header--list-item">
-              <a href="#teacher" aria-label="Teacher">
+              <a href="#schedule" class="navbar-item" aria-label="Schedule">
+                SCHEDULE
+              </a>
+              <a href="#teacher" class="navbar-item" aria-label="Teacher">
                 TEACHER
               </a>
-            </li>
-            <li class="header--list-item">
-              <a href="#contact" aria-label="Contact">
+              <a href="#contact" class="navbar-item" aria-label="Contact">
                 CONTACT
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </nav>
       </header>
       <article>
@@ -341,5 +355,30 @@
       async
       defer
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach(el => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>

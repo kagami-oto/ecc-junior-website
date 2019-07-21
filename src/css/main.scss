@@ -1,9 +1,9 @@
-// vendor css
-@import "./vendor/bulma.scss";
-
 // variables
 @import "./variables/colors.scss";
 @import "./variables/variables.scss";
+
+// vendor css
+@import "./vendor/bulma.scss";
 
 // base
 @import "./base/base.scss";
