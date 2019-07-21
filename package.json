@@ -10,6 +10,7 @@
     "start": "browser-sync start -s docs -w",
     "webpack": "webpack",
     "watch": "webpack -w",
+    "dev": "npm-run-all start watch",
     "clean": "rimraf docs",
     "build": "npm-run-all clean webpack"
   },
