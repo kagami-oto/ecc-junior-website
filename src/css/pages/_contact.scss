@@ -8,6 +8,15 @@
   flex-direction: column;
 }
 
+// overriding bulma's column. TODO: remove bulma
+.column {
+  padding: 0;
+}
+.columns {
+  max-width: 100%;
+  margin: 0;
+}
+
 #map {
   width: 360px;
   height: 360px;
