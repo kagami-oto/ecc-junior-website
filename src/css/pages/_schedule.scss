@@ -18,6 +18,7 @@
       font-size: 0.7rem;
       font-weight: bold;
       padding: 0.3rem 0.7rem;
+      border-right: 1px solid $secondary-color;
     }
     & > div:nth-child(2n + 1) {
       background-color: lighten($primary-color-light, 10%);
@@ -37,6 +38,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      border-right: 1px solid $secondary-color;
+      &:last-child {
+        border-right: none;
+      }
     }
   }
 

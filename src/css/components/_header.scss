@@ -33,13 +33,14 @@
 }
 
 .header--list-item {
+  position: relative;
   transition: all 0.2s;
   display: flex;
   justify-content: center;
   text-align: center;
   height: $header-height;
   list-style: none;
-  padding: 0.4rem;
+
   font-size: 0.6rem;
   align-items: center;
   &:hover {
@@ -51,23 +52,21 @@
   text-decoration: none;
   color: white;
   @media (min-width: $viewport-md) {
-    padding: 1rem;
     font-size: $font-size-default;
   }
-}
+  & a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
 
-.h-about::after {
-  content: "ABOUT";
-}
-.h-news::after {
-  content: "NEWS";
-}
-.h-schedule::after {
-  content: "SCHEDULE";
-}
-.h-teacher::after {
-  content: "TEACHER";
-}
-.h-contact::after {
-  content: "CONTACT";
+    &:hover {
+      color: inherit;
+    }
+    @media (min-width: $viewport-md) {
+      padding: 1rem;
+    }
+  }
 }
