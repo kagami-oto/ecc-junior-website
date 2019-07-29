@@ -25,3 +25,10 @@
 .contact--detail {
   padding: 36px;
 }
+
+.contact--qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
